@@ -1,0 +1,13 @@
+.env
+secret_keys.json
+config.py
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+uploads/
+temp_images/
+.DS_Store
+Thumbs.db
