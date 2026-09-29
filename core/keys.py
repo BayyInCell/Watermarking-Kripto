@@ -3,8 +3,7 @@ di folder instance/ (di luar source code, permission 600). TIDAK ADA kunci hardc
 Kunci -> keystream deterministik (SHA-256 counter mode) -> permutasi blok & pilihan koefisien."""
 import hashlib, json, os, re, secrets
 
-DATA_DIR = os.environ.get("WM_DATA_DIR",
-            os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "instance"))
+DATA_DIR = os.environ.get("WM_DATA_DIR", "/tmp")
 
 def new_key() -> bytes:
     return secrets.token_bytes(32)          # 256-bit dari os.urandom
