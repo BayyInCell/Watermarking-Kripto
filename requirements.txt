@@ -1,5 +1,4 @@
 Flask
-numpy>=1.26.0
+numpy
 scipy
 opencv-python-headless
-gunicorn
